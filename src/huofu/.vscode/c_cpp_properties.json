@@ -1,0 +1,49 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/wuxin/px/avoid_ws_ljx/devel/include/**",
+        "/home/wuxin/YZH/lidar_ws/devel/include/**",
+        "/home/wuxin/YZH/ccm_slam_ws/devel/include/**",
+        "/home/wuxin/YZH/yzh_ws2NoCat/cartographer_ws/install_isolated/include/**",
+        "/home/wuxin/zed/zed_ros_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/A-LOAM/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/avoidance/avoidance/include/**",
+        "/home/wuxin/YZH/ccm_slam_ws/src/ccm_slam/cslam/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/cloud_kmeans/include/**",
+        "/home/wuxin/YZH/socket/python_cvbridge/src/vision_opencv/cv_bridge/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/avoidance/global_planner/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/hector_slam/hector_geotiff/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/hector_slam/hector_map_tools/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/hector_slam/hector_mapping/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/hector_slam/hector_marker_drawing/include/**",
+        "/home/wuxin/YZH/yzh_ws/src/hough_ws/include/**",
+        "/home/wuxin/YZH/yzh_ws/src/huofu/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/huofu/include/**",
+        "/home/wuxin/YZH/socket/python_cvbridge/src/vision_opencv/image_geometry/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/LeGO-LOAM/LeGO-LOAM/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/LIO-SAM/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/loam_velodyne/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/avoidance/local_planner/include/**",
+        "/home/wuxin/JKW/local_road_ws/src/mav_find_road-project_local/include/**",
+        "/home/wuxin/YZH/yzh_ws/src/moving_detection/include/**",
+        "/home/wuxin/JKW/local_road_ws/src/octomap_rviz_plugins/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/pointcloud_to_laserscan/include/**",
+        "/home/wuxin/px/avoid_ws_ljx/src/avoidance/safe_landing_planner/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/velodyne/velodyne_driver/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/velodyne/velodyne_laserscan/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/velodyne/velodyne_pcl/include/**",
+        "/home/wuxin/YZH/lidar_ws/src/velodyne/velodyne_pointcloud/include/**",
+        "/home/wuxin/zed/zed_ros_ws/src/zed-ros-wrapper/zed_interfaces/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}

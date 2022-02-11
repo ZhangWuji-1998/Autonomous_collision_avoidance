@@ -1,0 +1,56 @@
+
+<launch>  
+		<node pkg="huofu" type="huofu" name="huofu" output="screen">
+	
+			<param name="image_topic" type="string" value="/camera/rgb/image_raw"/>
+			<param name="depth_topic" type="string" value="/camera/depth/image_raw"/>
+			<param name="pose_topic" type="string" value="/mavros/local_position/odom"/>
+			<param name="status_topic" type="string" value="/circle_related/start_calculate"/>
+			<param name="point_topic" type="string" value="/camera/depth/points"/>
+			<param name="map_frame" type="string" value="/local_origin"/>
+			<param name="camera_frame" type="string" value="/camera_link"/>	
+			<!-- <param name="point_topic" type="string" value="d435i_link"/>		 -->
+			<param name="spin_rate" type="int" value="1"/>	
+			<param name="dp" type="double" value="1"/>	
+			<param name="min_dist" type="double" value="60"/>	
+			<param name="param1" type="double" value="150"/>	
+			<param name="param2" type="double" value="60"/>	
+			<param name="min_radius" type="int" value="2"/>	
+			<param name="max_radius" type="int" value="200"/>
+			<param name="fx_" type="double" value="381.36246688113556"/>	
+			<param name="fy_" type="double" value="381.36246688113556"/>	
+			<param name="cx_" type="double" value="320.5"/>	
+			<param name="cy_" type="double" value="240.5"/>
+			<!-- 调整距离尽量小于1  不能保证是否会转圈 -->
+			<param name="distance_x0" type="double" value="0"/>	
+			<param name="distance_y0" type="double" value="0"/>	
+			<param name="distance_x1" type="double" value="0"/>	
+			<param name="distance_y1" type="double" value="0"/>	
+			<param name="distance_x2" type="double" value="0"/>	
+			<param name="distance_y2" type="double" value="0"/>	
+			<param name="distance_x3" type="double" value="0"/>	
+			<param name="distance_y3" type="double" value="0"/>	
+			<!-- 调整过圆心后的距离 让无人机往前飞多少  比赛场地穿框属于返航 应该为负号 正号代表前进-->
+			<param name="dis_go0" type="double" value="-0.5"/>	
+			<param name="dis_go1" type="double" value="-0.5"/>	
+			<param name="dis_go2" type="double" value="-0.5"/>	
+			<param name="dis_go3" type="double" value="-0.5"/>	
+			<!-- 点云 -->
+			<param name="z_side_min" type="double" value="0"/>	
+			<param name="z_side_max" type="double" value="5"/>	
+			<param name="y_side_min" type="double" value="-1"/>	
+			<param name="y_side_max" type="double" value="1"/>
+			<param name="x_side_min" type="double" value="-1"/>	
+			<param name="x_side_max" type="double" value="1"/>
+			<!-- 半径搜索 -->
+			<param name="radius_filter" type="double" value="0.8"/>
+			
+
+            <!--订阅的话题名称-->
+            <!--<param name="image_topic" type="string" value="/camera/color/image_raw"/>-->	
+
+  		</node>
+
+	<!-- <arg name="rviz_cfg"                default="$(find moving_detection)/launch/yzh.rviz" />
+	  <node pkg="rviz" type="rviz" name="rviz" args="-d $(arg rviz_cfg)"/> -->
+</launch>

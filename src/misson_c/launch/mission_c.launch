@@ -1,0 +1,32 @@
+<launch>  
+		 
+		 <!-- 坐标系是 camera_depth_frame -->
+    
+		<node pkg="mission_c" type="mission_c" name="missionc_c_node" output="screen">
+	
+			<param name="image_topic" type="string" value="/camera/rgb/image_raw
+"/>
+			<param name="motion_topic" type="string" value="/Drone/number"/>
+             
+            <param name="fx_" type="double" value="381.3028564453125"/>	
+			<param name="fy_" type="double" value="381.02349853515625"/>	
+			<param name="cx_" type="double" value="316.6654052734375"/>	
+            <param name="cy_" type="double" value="243.59825134277344"/>
+
+            <param name="min_radius" type="int" value="100"/>	
+			<param name="max_radius" type="int" value="300"/>	
+
+			<!-- 点云 -->
+			<param name="z_side_min" type="double" value="0"/>	
+			<param name="z_side_max" type="double" value="5"/>	
+			<param name="y_side_min" type="double" value="-2"/>	
+			<param name="y_side_max" type="double" value="2"/>
+			<param name="x_side_min" type="double" value="-2"/>	
+			<param name="x_side_max" type="double" value="2"/>
+			<param name="radius_filter" type="double" value="1"/>
+
+
+  		</node>
+
+
+</launch>
